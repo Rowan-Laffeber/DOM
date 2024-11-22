@@ -14,3 +14,20 @@ function why_unique_id() {
       x.innerHTML = "DOM opdracht";
     }
   }
+  var ajax = 0;        
+  var feyenoord = 0;        
+  function ajax_scoort(){            
+      ajax--;            
+      document.getElementById("score-ajax").innerText = ajax;
+      feyenoord++;       
+      document.getElementById("score-feyenoord").innerText = feyenoord;                
+      }    
+  var ajax = 0;        
+  var feyenoord = 0;        
+  function feyenoord_scoort(){            
+      feyenoord++;       
+      document.getElementById("score-feyenoord").innerText = feyenoord;        
+      ajax--;       
+      document.getElementById("score-ajax").innerText = ajax;        
+      }
+  
